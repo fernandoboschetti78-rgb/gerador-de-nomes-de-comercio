@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Nomes de Comércio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Gerador de Nomes de Comércio</h1>
+    <p>clique no botão para gerar um nome de comercio</p>
+    <p>{{ texto }}</p>
+    <form action="/gerar" method="post">
+        <button type="submit">Gerar Nome</button>
+    </form>
+</body>
+</html>
